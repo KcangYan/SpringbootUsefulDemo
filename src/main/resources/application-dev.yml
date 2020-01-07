@@ -1,0 +1,13 @@
+server:
+  address: 127.0.0.1
+  port: 8008
+server.servlet.context-path: /
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    multipart:
+      maxFileSize: 10Mb
+      maxRequestSize: 10Mb
