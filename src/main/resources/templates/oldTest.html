@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+body
+{
+	background-color: rgb(230, 255, 253);
+}
+h1
+{
+	color: #ff414e;
+	text-align:center;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:20px;
+}
+#para1
+{
+    text-align:center;
+    color: #c91fff;
+}
+        .test{
+            text-align:left;
+            color: darkblue;
+        }
+</style>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $.post("/index",{
+                "name":"kkk"
+            },function (data,status) {
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+        window.onbeforeunload=function (){
+            $.post("/index",{
+                "name":"clear"
+            });
+        };
+    });
+
+</script>
+<button id="btn" >sssssssss</button>
+
+</body>
+</html>
