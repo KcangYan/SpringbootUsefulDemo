@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>简易计算网页工具</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/smallCalcPage_2.17.js"></script>
+</head>
+<body>
+<style>
+    .weizhi
+    {
+        position:absolute;
+        left:620px;
+        top:100px;
+        font-family:"Times New Roman";
+        font-size:18px;
+    }
+    body
+    {
+        background-color:#b0c4de;
+    }
+</style>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">简易计算工具</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href="/help/ToUse">使用说明</a></li>
+            <li><a href="/help">帮助</a></li>
+            <li><a href="/change_price">修改单价</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<p>
+    <h3 style="position: relative;left: 30px">编号：<input type="text" id="people_id" class="" placeholder="请输入人员编号"></h3>
+    <h3 id="p_input_name" style="position: relative;left: 30px;color: #ff1312">重量：</h3>
+    <div class="col-lg-3">
+        <dvi class="input-group" style="width: 280px;position: relative;left: 70px">
+            <input type="text" id="zhongliang_id"  placeholder="单位/斤" class="form-control">
+            <span class="input-group-btn">
+                <button id="people_id_button" class="btn btn-default">确定</button>
+            </span>
+        </dvi>
+    </div>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <hr width="42%" align="left"/>
+</dvi>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_1" class="btn btn-success">纸皮<span class="badge">1</span></button>
+    <button id="button_2" class="btn btn-success">书本<span class="badge">2</span></button>
+    <button id="button_3" class="btn btn-success">报纸<span class="badge">3</span></button>
+    <button id="button_4" class="btn btn-success">水泥袋<span class="badge">4</span></button>
+    <button id="button_5" class="btn btn-success">衣服<span class="badge">5</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_6" class="btn btn-success">泡沫<span class="badge">6</span></button>
+    <button id="button_7" class="btn btn-success">白料<span class="badge">7</span></button>
+    <button id="button_8" class="btn btn-success">扣板<span class="badge">8</span></button>
+    <button id="button_9" class="btn btn-success">红料<span class="badge">9</span></button>
+    <button id="button_10" class="btn btn-success">黑蓝子<span class="badge">10</span></button>
+</dvi>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_11" class="btn btn-success">洗衣机料<span class="badge">11</span></button>
+    <button id="button_12" class="btn btn-success">好料<span class="badge">12</span></button>
+    <button id="button_13" class="btn btn-success">有机料<span class="badge">13</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_14" class="btn btn-success">铁罐<span class="badge">14</span></button>
+    <button id="button_15" class="btn btn-success">压块铁<span class="badge">15</span></button>
+    <button id="button_16" class="btn btn-success">铁栏杆<span class="badge">16</span></button>
+    <button id="button_17" class="btn btn-success">二等铁<span class="badge">17</span></button>
+    <button id="button_18" class="btn btn-success">好铁加工<span class="badge">18</span></button>
+</dvi>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_19" class="btn btn-success">好铁<span class="badge">19</span></button>
+    <button id="button_20" class="btn btn-success">不锈钢<span class="badge">20</span></button>
+    <button id="button_21" class="btn btn-success">好不锈钢<span class="badge">21</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_22" class="btn btn-success">铝盘<span class="badge">22</span></button>
+    <button id="button_23" class="btn btn-success">带铁铝线<span class="badge">23</span></button>
+    <button id="button_24" class="btn btn-success">铝罐<span class="badge">24</span></button>
+    <button id="button_25" class="btn btn-success">有塑铝条<span class="badge">25</span></button>
+    <button id="button_26" class="btn btn-success">铝合金<span class="badge">26</span></button>
+</dvi>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_27" class="btn btn-success">净铝线<span class="badge">27</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_28" class="btn btn-success">杂线<span class="badge">28</span></button>
+    <button id="button_29" class="btn btn-success">网线<span class="badge">29</span></button>
+    <button id="button_30" class="btn btn-success">黑闭路线<span class="badge">30</span></button>
+    <button id="button_31" class="btn btn-success">双皮铜线<span class="badge">31</span></button>
+    <button id="button_32" class="btn btn-success">单皮铜线<span class="badge">32</span></button>
+</dvi>
+</p>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_33" class="btn btn-success">黄铜<span class="badge">33</span></button>
+    <button id="button_34" class="btn btn-success">漆包线<span class="badge">34</span></button>
+    <button id="button_35" class="btn btn-success">光亮铜<span class="badge">35</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_36" class="btn btn-success">杂电机<span class="badge">36</span></button>
+    <button id="button_37" class="btn btn-success">电动机<span class="badge">37</span></button>
+    <button id="button_38" class="btn btn-success">铝水泵<span class="badge">38</span></button>
+    <button id="button_39" class="btn btn-success">马达<span class="badge">39</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<p>
+<dvi class="btn-group" style="position: relative;left: 25px">
+    <button id="button_40" class="btn btn-success">其他(+1)<span class="badge">40</span></button>
+    <button id="button_41" class="btn btn-success">其他(-1)<span class="badge">41</span></button>
+</dvi>
+</p>
+<hr width="42%" align="left"/>
+<dvi class="weizhi" id="add_text" >
+    <div class="col-lg-7">
+                 <dvi class="input-group">
+                    <input type="text" id="delete_id" autocomplete="off" placeholder="输入想删除的人员编号" class="form-control"/>
+                      <span class="input-group-btn">
+                           <button id="delete_button_id" class="btn btn-default">删除</button>
+                      </span>
+                </dvi>
+            </div>
+    <br />
+    <br />
+</dvi>
+</body>
+</html>
